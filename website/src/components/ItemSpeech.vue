@@ -1,12 +1,12 @@
 <template>
   <v-row>
     <v-col class="flex-grow-0">
-      <div class="text-subtitle-1 blue-text-must-click">{{palestra.inicio}}</div>
-      <div class="text-subtitle-1 blue-text-must-click">{{palestra.fim}}</div>
+      <div class="text-subtitle-1 blue-text-must-click">{{speech.start}}</div>
+      <div class="text-subtitle-1 blue-text-must-click">{{speech.end}}</div>
     </v-col>
     <v-col class="flex-grow-1">
-      <div class="text-h5">{{palestra.titulo}}</div>
-      <div class="text-body-2">{{palestra.subtitulo}}</div>
+      <div class="text-h5">{{speech.title}}</div>
+      <div class="text-body-2">{{speech.subtitle}}</div>
     </v-col>
   </v-row>
 </template>
@@ -15,11 +15,11 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'ItemPalestra',
+  name: 'ItemSpeech',
   data () {
     return {}
   },
-  props: ['palestra']
+  props: ['speech']
 })
 </script>
 

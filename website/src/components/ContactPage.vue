@@ -1,17 +1,17 @@
 <template>
-  <v-container id="contato-page" style="height: 100vh"></v-container>
+  <v-container id="contact-page" style="height: 100vh"></v-container>
 </template>
 
 <script>
 export default {
-  name: 'ContatoPage',
+  name: 'ContactPage',
   components: {},
   data: () => ({
-    container: document.querySelector('#contato-page'),
+    container: document.querySelector('#contact-page'),
     
   }),
   mounted () {
-    this.container = document.querySelector('#contato-page')
+    this.container = document.querySelector('#contact-page')
   }
 }
 </script>

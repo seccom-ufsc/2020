@@ -1,17 +1,17 @@
 <template>
-  <v-container id="inscricoes-page" style="height: 100vh"></v-container>
+  <v-container id="registration-page" style="height: 100vh"></v-container>
 </template>
 
 <script>
 export default {
-  name: 'InscricoesPage',
+  name: 'RegistrationPage',
   components: {},
   data: () => ({
-    container: document.querySelector('#inscricoes-page'),
+    container: document.querySelector('#registration-page'),
     
   }),
   mounted () {
-    this.container = document.querySelector('#inscricoes-page')
+    this.container = document.querySelector('#registration-page')
   }
 }
 </script>
