@@ -1,13 +1,15 @@
 <template>
   <v-container id="schedule-page" style="min-height: 100vh">
     <v-sheet :max-width="window.innerWidth" color="rgba(0,0,0,0)">
-      <v-carousel :height="800" hide-delimiters :show-arrows="true" :show-arrows-on-hover="true">
-        <v-carousel-item v-for="item in days" :key="item.data">
+      <v-carousel height="auto" :value="step" hide-delimiters :show-arrows="true" :show-arrows-on-hover="true">
+        <v-carousel-item v-for="(item, step) in days" :key="item.date">
           <v-card class="fill-height flex-grow-1 px-sm-6 px-md-8 px-lg-12 px-xl-16 py-5">
-            <v-card-title>{{item.data}}</v-card-title>
-            <v-card-subtitle>{{item.weekday}}</v-card-subtitle>
-            <v-card-text>
-              <div v-for="(speech, index) in item.speeches" :key="index">
+            <v-row class="d-flex flex-column align-center">
+              <v-card-title class="text-h4">{{step + 1}}º DIA</v-card-title>
+              <v-card-subtitle class="blue-text-must-click">{{item.date}} - {{item.weekday}}</v-card-subtitle>
+            </v-row>
+            <v-card-text class="d-flex flex-column align-center">
+              <div v-for="(speech, index) in item.speeches" :key="index" style="width: 70%">
                 <ItemSpeech :speech="speech"/>
               </div>
             </v-card-text>
@@ -23,12 +25,11 @@ import ItemSpeech from './ItemSpeech'
 
 export default {
   name: 'SchedulePage',
-  components: {
-    ItemSpeech
-  },
+  components: { ItemSpeech },
   data: () => ({
     container: document.querySelector('#schedule-page'),
     window: window,
+    step: 0,
     days: [
       { 
         date: '05/10',
@@ -36,25 +37,25 @@ export default {
         speeches: [
           {
             title: 'Palestrinha',
-            subtitle: 'Commodo quis est qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
+            subtitle: 'Commodo quis est qui cillum cupidasdfaatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
             start: '15:00',
             end: '16:00'
           },
           {
             title: 'Palestrinha',
-            subtitle: 'Commodo quis est qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
+            subtitle: 'Commodo quis est qui cillum cupidasdfaatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
             start: '15:00',
             end: '16:00'
           },
           {
             title: 'Palestrinha',
-            subtitle: 'Commodo quis est qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
+            subtitle: 'Commodo quis est qui cillum cupidasdfaatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
             start: '15:00',
             end: '16:00'
           },
           {
             title: 'Palestrinha',
-            subtitle: 'Commodo quis est qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
+            subtitle: 'Commodo quis est qui cillum cupidasdfaatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatatst qui cillum cupidatat nisi fugiat cupidatat aliquip ut occaecat.',
             start: '15:00',
             end: '16:00'
           },
@@ -250,7 +251,7 @@ export default {
 
 <style lang="scss">
   .blue-text-must-click {
-    color: #2D78BA;
+    color: #2D78BA !important;
   }
 
   div.row .roboto-mono, div.col .roboto-mono{
