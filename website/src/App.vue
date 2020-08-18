@@ -17,6 +17,7 @@
       <ContactPage/>
       <RegistrationPage/>
       <FourierBackground/>
+      <PulsarRadioBackground/>
     </v-main>
   </v-app>
 </template>
@@ -28,6 +29,7 @@ import SpeakersPage from './components/SpeakersPage'
 import ContactPage from './components/ContactPage'
 import RegistrationPage from './components/RegistrationPage'
 import FourierBackground from './components/FourierBackground'
+import PulsarRadioBackground from './components/PulsarRadioBackground'
 
 export default {
   name: 'App',
@@ -37,7 +39,8 @@ export default {
     SpeakersPage,
     ContactPage,
     RegistrationPage,
-    FourierBackground
+    FourierBackground,
+    PulsarRadioBackground
   },
   data: () => ({
     marks: {

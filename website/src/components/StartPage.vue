@@ -1,5 +1,5 @@
 <template>
-  <v-container id="start-page" style="height: 100vh">
+  <v-container id="start-page">
     <v-col class="d-flex align-center flex-column" style="height: 90vh">
       <v-row class="d-flex align-center mobile-flex-column">
         <div class="text-h1 roboto-mono" v-text="'SECCOM'"></div>
