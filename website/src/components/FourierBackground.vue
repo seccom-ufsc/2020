@@ -22,7 +22,8 @@ export default Vue.extend({
       const isDark = this.$vuetify.theme.isDark
 
       this.sketch = function (p) {
-        const wave = new Fourier(p, 0.07, 70, '#474793', 5, isDark)
+        const mobile = window.innerHeight > window.innerWidth 
+        const wave = new Fourier(p, mobile ? 0.02 : 0.05, 70, '#474793', 7, isDark)
 
         p.setup = function () {
           const canvas = p.createCanvas(window.innerWidth, window.innerHeight)
