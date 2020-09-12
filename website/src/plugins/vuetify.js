@@ -11,10 +11,14 @@ export default new Vuetify({
     iconfont: 'fa'
   },
   theme: {
-    dark: true,
+    dark: false,
     themes: {
       dark: {
         primary: colors.grey.darken4
+      },
+      light: {
+        primary: '#2e2e5e',
+        accent: '#BCBCDC'
       }
     }
   }
