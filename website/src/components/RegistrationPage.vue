@@ -1,5 +1,5 @@
 <template>
-  <v-container id="registration-page" style="height: 100vh"></v-container>
+  <v-container id="registration-page"></v-container>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
   .blue-text-must-click {
-    color: #2D78BA;
+    color: #474793;
   }
 
   div.row .roboto-mono, div.col .roboto-mono{

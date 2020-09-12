@@ -25,7 +25,7 @@ export default Vue.extend({
 
 <style lang="scss">
   .blue-text-must-click {
-    color: #2D78BA;
+    color: #474793;
   }
 
   div.row .roboto-mono, div.col .roboto-mono{

@@ -1,5 +1,5 @@
 export default class Fourier {
-  constructor (p5Instance, increment, radius, color, n) {
+  constructor (p5Instance, increment, radius, color, n, darkTheme = false) {
     this.baseRadius = radius
     this.radius = radius
     this.speed = increment
@@ -13,6 +13,7 @@ export default class Fourier {
     this.prevY = null
     this.waveDistance = radius * 2
     this.p5Instance = p5Instance
+    this.darkTheme = darkTheme
   }
 
   update (n) {
@@ -38,7 +39,7 @@ export default class Fourier {
 
       // Outter circle
       this.p5Instance.noFill()
-      this.p5Instance.stroke('#FFF')
+      this.p5Instance.stroke(this.darkTheme ? 255 : 0)
       this.p5Instance.ellipse(this.prevX, this.prevY, this.radius * 2)
 
       // Inside circle

@@ -1,7 +1,7 @@
 <template>
-  <v-container id="schedule-page" style="min-height: 100vh">
-    <v-sheet :max-width="window.innerWidth" color="rgba(0,0,0,0)">
-      <v-carousel :height="800" hide-delimiters :show-arrows="true" :show-arrows-on-hover="true">
+  <v-container id="schedule-page">
+    <v-sheet :max-width="window.innerWidth">
+      <v-carousel :height="600" hide-delimiters :show-arrows="true" :show-arrows-on-hover="true">
         <v-carousel-item v-for="item in days" :key="item.data">
           <v-card class="fill-height flex-grow-1 px-sm-6 px-md-8 px-lg-12 px-xl-16 py-5">
             <v-card-title>{{item.data}}</v-card-title>
@@ -250,7 +250,7 @@ export default {
 
 <style lang="scss">
   .blue-text-must-click {
-    color: #2D78BA;
+    color: #474793;
   }
 
   div.row .roboto-mono, div.col .roboto-mono{

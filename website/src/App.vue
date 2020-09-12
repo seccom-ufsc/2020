@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary">
       <div class="text-h6 roboto-mono px-3 blue-text-must-click mobile-hide">SECCOM</div>
       <v-spacer></v-spacer>
-      <v-tabs v-model="activeTab" right slider-color="#2D78BA" slider-size="4" color="#2D78BA">
+      <v-tabs v-model="activeTab" right slider-color="#BCBCDC" slider-size="4" color="#BCBCDC">
         <v-tab @click="changeTab(index)" v-for="(tab, index) in tabs" :key="tab.id" :id="tab.id" class="roboto-mono">
           {{tab.title}}
         </v-tab>
@@ -12,8 +12,8 @@
 
     <v-main>
       <StartPage/>
-      <SchedulePage/>
-      <SpeakersPage/>
+      <!-- <SchedulePage/> -->
+      <!-- <SpeakersPage/> -->
       <ContactPage/>
       <RegistrationPage/>
       <FourierBackground/>
@@ -24,8 +24,8 @@
 
 <script>
 import StartPage from './components/StartPage'
-import SchedulePage from './components/SchedulePage'
-import SpeakersPage from './components/SpeakersPage'
+// import SchedulePage from './components/SchedulePage'
+// import SpeakersPage from './components/SpeakersPage'
 import ContactPage from './components/ContactPage'
 import RegistrationPage from './components/RegistrationPage'
 import FourierBackground from './components/FourierBackground'
@@ -35,8 +35,8 @@ export default {
   name: 'App',
   components: {
     StartPage,
-    SchedulePage,
-    SpeakersPage,
+    // SchedulePage,
+    // SpeakersPage,
     ContactPage,
     RegistrationPage,
     FourierBackground,
@@ -52,10 +52,10 @@ export default {
     },
     tabs: [
       { id: 'start-page-tab', title: 'INÍCIO', container: 'start-page' },
-      { id: 'schedule-page-tab', title: 'PROGRAMAÇÃO', container: 'schedule-page' },
-      { id: 'speakers-page-tab', title: 'PALESTRANTES', container: 'speakers-page' },
+      // { id: 'schedule-page-tab', title: 'PROGRAMAÇÃO', container: 'schedule-page' },
+      // { id: 'speakers-page-tab', title: 'PALESTRANTES', container: 'speakers-page' },
       { id: 'contact-page-tab', title: 'CONTATO', container: 'contact-page' },
-      { id: 'registration-page-tab', title: 'INSCRIÇÕES', container: 'registration-page' },
+      // { id: 'registration-page-tab', title: 'INSCRIÇÕES', container: 'registration-page' },
     ],
     activeTab: 0,
   }),
@@ -103,7 +103,7 @@ export default {
   }
 
   .v-toolbar__content .blue-text-must-click {
-    color: #2D78BA;
+    color: #BCBCDC;
   }
 
   @media (max-aspect-ratio: 1/1) {

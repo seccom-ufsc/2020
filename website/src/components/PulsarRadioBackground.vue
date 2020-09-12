@@ -16,6 +16,8 @@ export default Vue.extend({
     }
   },
   mounted () {
+    const isDark = this.$vuetify.theme.isDark
+
     this.sketch = function (p) {
       let f = 0
 
@@ -28,9 +30,9 @@ export default Vue.extend({
       p.draw = function () {
         f++
         
-        p.background('#121212')
-        p.fill('#121212')
-        p.stroke(255) 
+        p.background(isDark ? '#121212' : '#ffffff')
+        p.fill(isDark ? '#121212' : '#ffffff')
+        p.stroke(isDark ? 255 : '#474793') 
 
         for (let y = 100; y < p.height; y += 5) {
           p.beginShape()

@@ -15,24 +15,30 @@ export default Vue.extend({
     }
   },
   mounted () {
-    this.sketch = function (p) {
-      const wave = new Fourier(p, 0.03, 70, '#2D78BA', 5)
+    this.attachCanvas()
+  },
+  methods: {
+    attachCanvas () {
+      const isDark = this.$vuetify.theme.isDark
 
-      p.setup = function () {
-        const canvas = p.createCanvas(window.innerWidth, window.innerHeight)
-        document.querySelector('.fourier-canvas').appendChild(canvas.elt)
-        p.frameRate(60)
+      this.sketch = function (p) {
+        const wave = new Fourier(p, 0.07, 70, '#474793', 5, isDark)
+
+        p.setup = function () {
+          const canvas = p.createCanvas(window.innerWidth, window.innerHeight)
+          document.querySelector('.fourier-canvas').appendChild(canvas.elt)
+        }
+
+        p.draw = function () {
+          p.clear()
+          p.translate(p.width - 120, p.height / 2)
+          p.rotate(p.PI)
+          wave.show()
+        }
       }
 
-      p.draw = function () {
-        p.clear()
-        p.translate(p.width - 120, p.height / 2)
-        p.rotate(p.PI)
-        wave.show()
-      }
+      this.instance = new p5(this.sketch)
     }
-
-    this.instance = new p5(this.sketch)
   }
 })
 </script>
