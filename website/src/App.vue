@@ -61,10 +61,10 @@ export default {
   }),
   mounted () {
     this.marks.home = document.querySelector('#start-page')
-    this.marks.schedule = document.querySelector('#schedule-page')
-    this.marks.speakers = document.querySelector('#speakers-page')
+    // this.marks.schedule = document.querySelector('#schedule-page')
+    // this.marks.speakers = document.querySelector('#speakers-page')
     this.marks.contact = document.querySelector('#contact-page')
-    this.marks.registration = document.querySelector('#registration-page')
+    // this.marks.registration = document.querySelector('#registration-page')
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
@@ -74,13 +74,7 @@ export default {
   },
   methods: {
     handleScroll (event) {
-      if (window.scrollY >= (this.marks.registration.offsetTop - 80)) {
-        this.activeTab = 4
-      } else if (window.scrollY >= (this.marks.contact.offsetTop - 80)) {
-        this.activeTab = 3
-      } else if (window.scrollY >= (this.marks.speakers.offsetTop - 80)) {
-        this.activeTab = 2
-      } else if (window.scrollY >= (this.marks.schedule.offsetTop - 80)) {
+      if (window.scrollY >= (this.marks.contact.offsetTop - 80)) {
         this.activeTab = 1
       } else {
         this.activeTab = 0
