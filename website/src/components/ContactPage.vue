@@ -20,12 +20,12 @@ export default {
   data: () => ({
     container: document.querySelector('#contact-page'),
     contacts: [
-      { icon: 'mdi-twitter', name: '@seccom-ufsc' },
-      { icon: 'mdi-instagram', name: '@seccom-ufsc' },
-      { icon: 'mdi-email', name: 'seccom.ufsc@gmail.com' },
-      { icon: 'mdi-github', name: 'seccom.ufsc@gmail.com' },
-      { icon: 'mdi-discord', name: 'seccom.ufsc@gmail.com' },
-      { icon: 'mdi-telegram', name: 'seccom.ufsc@gmail.com' },
+      { icon: 'mdi-facebook', name: '@seccom-ufsc', link: 'https://www.facebook.com/seccom.ufsc' },
+      { icon: 'mdi-instagram', name: '@seccom-ufsc', link: 'https://www.instagram.com/seccom.ufsc/' },
+      { icon: 'mdi-email', name: 'seccom.ufsc@gmail.com', link: 'mailto:seccom.ufsc@gmail.com' },
+      { icon: 'mdi-github', name: 'seccom.ufsc@gmail.com', link: 'https://github.com/seccom-ufsc/' },
+      { icon: 'mdi-discord', name: 'seccom.ufsc@gmail.com', link: 'https://discord.gg/zTmGqsh' },
+      { icon: 'mdi-telegram', name: 'seccom.ufsc@gmail.com', link: 'https://t.me/seccomufsc' },
     ]
   }),
   mounted () {
@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss">
   .blue-text-must-click {
-    color: #2D78BA;
+    color:#474793;
   }
 
   div.row .roboto-mono, div.col .roboto-mono{
