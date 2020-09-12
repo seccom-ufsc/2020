@@ -1,6 +1,6 @@
 <template>
   <v-container id="contact-page">
-    <v-row class="d-flex justify-center my-15 roboto-mono">
+    <v-row class="d-flex justify-center my-15 roboto-mono px-15" >
       <div class="text-h2" v-text="'Quer falar com a gente?'"></div>
     </v-row>
     <v-row class="d-flex justify-center">
