@@ -7,7 +7,7 @@
       </v-row>
       <v-col class="d-flex flex-column justify-center">
         <v-row class="flex-grow-0 text-h5 roboto-mono">Semana Acadêmica da Computação e Sistemas</v-row>
-        <v-row class="flex-grow-0 text-h5 roboto-mono">De 5 a 10 de outubro</v-row>
+        <!-- <v-row class="flex-grow-0 text-h5 roboto-mono">De 5 a 10 de outubro</v-row> -->
       </v-col>
     </v-col>
   </v-container>

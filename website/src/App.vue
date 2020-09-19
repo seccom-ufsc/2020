@@ -13,7 +13,7 @@
     <v-main>
       <StartPage/>
       <!-- <SchedulePage/> -->
-      <!-- <SpeakersPage/> -->
+      <SpeakersPage/>
       <ContactPage/>
       <RegistrationPage/>
       <FourierBackground/>
@@ -25,7 +25,7 @@
 <script>
 import StartPage from './components/StartPage'
 // import SchedulePage from './components/SchedulePage'
-// import SpeakersPage from './components/SpeakersPage'
+import SpeakersPage from './components/SpeakersPage'
 import ContactPage from './components/ContactPage'
 import RegistrationPage from './components/RegistrationPage'
 import FourierBackground from './components/FourierBackground'
@@ -36,7 +36,7 @@ export default {
   components: {
     StartPage,
     // SchedulePage,
-    // SpeakersPage,
+    SpeakersPage,
     ContactPage,
     RegistrationPage,
     FourierBackground,
@@ -53,7 +53,7 @@ export default {
     tabs: [
       { id: 'start-page-tab', title: 'INÍCIO', container: 'start-page' },
       // { id: 'schedule-page-tab', title: 'PROGRAMAÇÃO', container: 'schedule-page' },
-      // { id: 'speakers-page-tab', title: 'PALESTRANTES', container: 'speakers-page' },
+      { id: 'speakers-page-tab', title: 'PALESTRANTES', container: 'speakers-page' },
       { id: 'contact-page-tab', title: 'CONTATO', container: 'contact-page' },
       // { id: 'registration-page-tab', title: 'INSCRIÇÕES', container: 'registration-page' },
     ],
@@ -62,7 +62,7 @@ export default {
   mounted () {
     this.marks.home = document.querySelector('#start-page')
     // this.marks.schedule = document.querySelector('#schedule-page')
-    // this.marks.speakers = document.querySelector('#speakers-page')
+    this.marks.speakers = document.querySelector('#speakers-page')
     this.marks.contact = document.querySelector('#contact-page')
     // this.marks.registration = document.querySelector('#registration-page')
   },
@@ -74,7 +74,9 @@ export default {
   },
   methods: {
     handleScroll (event) {
-      if (window.scrollY >= (this.marks.contact.offsetTop - 80)) {
+      if (window.scrollY >= (this.marks.contact.offsetTop)) {
+        this.activeTab = 2
+      } else if (window.scrollY >= (this.marks.speakers.offsetTop)) {
         this.activeTab = 1
       } else {
         this.activeTab = 0
