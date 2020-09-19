@@ -1,0 +1,20 @@
+[
+    { 
+        "name": "Jônata Tyska Carvalho", 
+        "title": "Robótica Evolutiva: do in silico para o in vivo", 
+        "text": "A Robótica Evolutiva é uma área que busca inspiração na biologia para realizar o desenvolvimento de morfologias e comportamentos robóticos adaptativos e soluções práticas no âmbito da robótica móvel e de serviço. Nesta palestra apresentarei uma visão geral e um breve histórico dessa área que em 30 anos foi do desenvolvimento de robôs em simulação para a criação de robôs usando células vivas. Serão apresentados aspectos teóricos e práticos relacionados à inteligência corporificada, e ao desenvolvimento e comportamento robótico adaptativo através do uso de redes neurais e algoritmos evolutivos.",
+        "photo": "https://i.ibb.co/yqTqwpk/jtyska-Squared.png" 
+    },
+    { 
+        "name": "Geomar Schreiner", 
+        "title": "O que são BDs NewSQL", 
+        "text": "NewSQL é o temo utilizado para designar um novo paradigma de Banco de Dados (BDs). São BDs que combinam a capacidade de lidar com grandes quantidades de dados dos BDs NoSQL com as características do modelo relacional (SQL, ACID). Serão apresentados os principais conceitos que envolvem os BDs NewSQL e quais as situações em que estes bancos são a solução mais indicada",
+        "photo": "https://i.ibb.co/Kh3Gvh6/geomar.jpg" 
+    },
+    { 
+        "name": "Mateus Grellert", 
+        "title": "Data Mining e Machine Learning com Python", 
+        "text": "Nessa Palestra, vamos aprender um pouco sobre algumas técnicas básicas aplicadas em Data Mining e Machine Learning, bem como as ferramentas e bibliotecas em Python que nos permitem implementar soluções deste tipo. O objetivo é que os participantes sejam capazes de coletar seus próprios conjuntos de dados, analisar e processar esses dados, tratar problemas comuns e treinar modelos preditivos.", 
+        "photo": "https://i.ibb.co/7pg6nMh/image1.jpg" 
+    }
+]
