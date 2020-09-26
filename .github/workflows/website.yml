@@ -18,6 +18,7 @@ jobs:
         working-directory: website
       - run: npm run build
         working-directory: website
+      - run: ls -R website
       - run: cat website/dist/2020/index.html
       - run: git subtree push --prefix dist origin gh-pages
       #- name: Deploy 🚀
