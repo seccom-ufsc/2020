@@ -75,8 +75,10 @@ export default {
   methods: {
     handleScroll (event) {
       if (window.scrollY >= (this.marks.contact.offsetTop)) {
-        this.activeTab = 2
+        this.activeTab = 3
       } else if (window.scrollY >= (this.marks.speakers.offsetTop)) {
+        this.activeTab = 2
+      } else if (window.scrollY >= (this.marks.schedule.offsetTop)) {
         this.activeTab = 1
       } else {
         this.activeTab = 0
@@ -106,5 +108,9 @@ export default {
     .mobile-hide {
       display: none;
     }
+  }
+
+  .v-tab {
+    color: #BCBCDC;
   }
 </style>
