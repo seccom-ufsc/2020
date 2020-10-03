@@ -17,7 +17,7 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        <v-card-text style="text-align: justify">{{speaker.text}}</v-card-text>
+        <v-card-text style="text-align: justify">{{speaker.bio}}</v-card-text>
       </div>
     </v-expand-transition>
   </v-card>

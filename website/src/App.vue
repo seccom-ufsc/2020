@@ -12,7 +12,7 @@
 
     <v-main>
       <StartPage/>
-      <!-- <SchedulePage/> -->
+      <SchedulePage/>
       <SpeakersPage/>
       <ContactPage/>
       <RegistrationPage/>
@@ -24,7 +24,7 @@
 
 <script>
 import StartPage from './components/StartPage'
-// import SchedulePage from './components/SchedulePage'
+import SchedulePage from './components/SchedulePage'
 import SpeakersPage from './components/SpeakersPage'
 import ContactPage from './components/ContactPage'
 import RegistrationPage from './components/RegistrationPage'
@@ -35,7 +35,7 @@ export default {
   name: 'App',
   components: {
     StartPage,
-    // SchedulePage,
+    SchedulePage,
     SpeakersPage,
     ContactPage,
     RegistrationPage,
@@ -52,7 +52,7 @@ export default {
     },
     tabs: [
       { id: 'start-page-tab', title: 'INÍCIO', container: 'start-page' },
-      // { id: 'schedule-page-tab', title: 'PROGRAMAÇÃO', container: 'schedule-page' },
+      { id: 'schedule-page-tab', title: 'PROGRAMAÇÃO', container: 'schedule-page' },
       { id: 'speakers-page-tab', title: 'PALESTRANTES', container: 'speakers-page' },
       { id: 'contact-page-tab', title: 'CONTATO', container: 'contact-page' },
       // { id: 'registration-page-tab', title: 'INSCRIÇÕES', container: 'registration-page' },
@@ -61,7 +61,7 @@ export default {
   }),
   mounted () {
     this.marks.home = document.querySelector('#start-page')
-    // this.marks.schedule = document.querySelector('#schedule-page')
+    this.marks.schedule = document.querySelector('#schedule-page')
     this.marks.speakers = document.querySelector('#speakers-page')
     this.marks.contact = document.querySelector('#contact-page')
     // this.marks.registration = document.querySelector('#registration-page')

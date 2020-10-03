@@ -1,5 +1,6 @@
 <template>
   <v-container id="speakers-page" style="min-height: 100vh">
+    <div class="text-h2 my-15 text-center">Convidados</div>
     <v-row class="d-flex justify-center align-start">
       <SpeakerCard class="ma-4" v-for="(speaker, index) in speakers" :key="index" :speaker="speaker"/>
     </v-row>
