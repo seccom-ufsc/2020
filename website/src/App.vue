@@ -16,7 +16,6 @@
       <SpeakersPage/>
       <ContactPage/>
       <RegistrationPage/>
-      <FourierBackground/>
       <PulsarRadioBackground/>
     </v-main>
   </v-app>
@@ -28,7 +27,6 @@ import SchedulePage from './components/SchedulePage'
 import SpeakersPage from './components/SpeakersPage'
 import ContactPage from './components/ContactPage'
 import RegistrationPage from './components/RegistrationPage'
-import FourierBackground from './components/FourierBackground'
 import PulsarRadioBackground from './components/PulsarRadioBackground'
 
 export default {
@@ -39,7 +37,6 @@ export default {
     SpeakersPage,
     ContactPage,
     RegistrationPage,
-    FourierBackground,
     PulsarRadioBackground
   },
   data: () => ({
