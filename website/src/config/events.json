@@ -12,10 +12,22 @@
         "details": "Nessa Palestra, vamos aprender um pouco sobre algumas técnicas básicas aplicadas em Data Mining e Machine Learning, bem como as ferramentas e bibliotecas em Python que nos permitem implementar soluções deste tipo. O objetivo é que os participantes sejam capazes de coletar seus próprios conjuntos de dados, analisar e processar esses dados, tratar problemas comuns e treinar modelos preditivos."
     },
     {
+        "name": "Contribuicoes Importam: Software Livre como Curriculo",
+        "start": "2020-10-06T13:30:00",
+        "end": "2020-10-06T14:30:00",
+        "details": "<Em breve>"
+    },
+    {
         "name": "Roda de conversa: propriedade intelectual e copyright",
         "start": "2020-10-06T14:30:00",
         "end": "2020-10-06T15:20:00",
         "details": "O mercado de desenvolvimento vive uma série de dualidades, entre elas as questões de código aberto ou fechado, software livre ou restrições de propriedade intelectual, e limitações por copyright. Esta roda de conversa visa discutir sobre o impacto dessas decisões em projetos, seja para a equipe que neles trabalham, seja para outros desenvolvedores, ou mesmo para a comunidade e o consumidor final."
+    },
+    {
+        "name": "Como contribuir para SL me tornou um melhor profissional",
+        "start": "2020-10-07T14:30:00",
+        "end": "2020-10-07T15:30:00",
+        "details": "<Em breve>"
     },
     {
         "name": "Big Data: Como a Inteligência Artificial no Cotidiano e o Mercado de Trabalho",
