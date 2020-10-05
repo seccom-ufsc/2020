@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary">
+      <img style="height: 80%" src="./assets/logo.png">
       <div class="text-h6 roboto-mono px-3 blue-text-must-click mobile-hide">SECCOM</div>
       <v-spacer></v-spacer>
       <v-tabs v-model="activeTab" right slider-color="#BCBCDC" slider-size="4" color="#BCBCDC">
