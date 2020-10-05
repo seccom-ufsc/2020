@@ -79,5 +79,11 @@
         "title": "Convidada: Roda de Conversa sobre Propriedade Intelectual e Copyright",
         "photo": "https://i.ibb.co/jwGMtgS/th-bata.jpg",
         "bio": "Advogada e mestra em engenharia e gestão do conhecimento pela UFSC, tem especialização em direito empresarial e direito digital (em andamento) e certificações internacionais em Proteção de Dados pela Exin"
+    },
+    {
+        "name": "André Wüst Zibetti",
+        "title": "Convidado: Roda de Conversa sobre A importância de transparência e dados abertos no combate à pandemia",
+        "photo": "https://i.ibb.co/jHjQNTK/Andre-Zibetti.png",
+        "bio": "Doutor em Engenharia Química pela UFSC, atuou como pesquisador na École Nationale Supérieure des Industries Chimiques na França. Suas áreas de estudo e pesquisa são em modelagem matemática determinística e estocástica aplicadas aos processos produtivos e aprendizado estatístico."
     }
 ]
